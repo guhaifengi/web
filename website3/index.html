@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fn() {
+            var str = "342427169710244811";
+
+            // var newstr2 = newstr.replace(newstr.substring(18, 14), '****');
+            var newstr2 = str.replace(str.substring(18, 14), '****');
+            var str1 = str.substring(14, 10);
+            var newstr1 = `<b>${str1}</b>`
+            var newstr = newstr2.replace(newstr2.substring(14, 10), newstr1)
+                // document.write(newstr);
+            document.write(newstr);
+        }
+        fn()
+    </script>
+</body>
+
+</html>
